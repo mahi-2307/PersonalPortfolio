@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap");
+
+#intro {
+  height: calc(100vh - 50px);
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .introContent {
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    .introText {
+      font-size: 50px;
+      color: white;
+      padding: 10px 0px;
+      text-align: center;
+      .introName {
+        font-family: "Martian Mono", monospace;
+        font-weight: 800;
+        font-size: 60px;
+        color: rgb(68, 189, 57);
+      }
+      .introProfession {
+        font-size: 40px;
+      }
+      .introTagLine {
+        font-size: 25px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .introTagLine {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 520px) {
+      .introText {
+        font-size: 30px;
+        .introName {
+          font-size: 40px;
+        }
+        .introProfession {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .socialLinks {
+    margin-top: 10px;
+    .icon {
+      margin: 0px 9px;
+      color: black;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 40px;
+      padding: 5px;
+      cursor: pointer;
+      box-shadow: 0px 3px 4px 1px rgb(137, 135, 135);
+    }
+    .icon:hover {
+      box-shadow: 1px 6px 10px 1px rgb(207, 205, 205);
+    }
+  }
+}

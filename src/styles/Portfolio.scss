@@ -1,0 +1,139 @@
+.work {margin: 50px 0;
+  color: black;
+  .myWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      // Styles for the heading go here
+      color: black;
+    }
+
+    .project-container {
+
+      .project-left,
+      .project-right {
+        box-shadow: 0px 0px 4px 1px gray;
+        height: fit-content;
+        width: fit-content;
+        padding: 30px;
+        display: flex;
+        background-color: white;
+        justify-content: space-around;
+        gap: 10px;
+        margin: 40px 0;
+        padding: 20px;
+   
+        width: 60vw;
+        .image {
+          display: flex;
+          align-items: center;
+          box-shadow: 0px 0px 4px 1px gray;
+          border-radius: 10px;
+                    img {
+         
+            height: 43vh;
+            width: 30vw;
+            object-fit: contain;
+          }
+        }
+
+        .project-details {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+          .name{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+          }
+          .techn{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+              p{
+                font-weight: 550;
+                text-align: center;
+                background-color: white;
+                box-shadow: 0px 0px 4px 1px rgb(202, 202, 202);
+                padding: 9px;
+                border-radius: 5px;
+              }
+          }
+          .desc{
+            
+            color: black;
+          }
+          a{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+
+            .icon{
+              font-size: 30px;
+            }
+          }
+          .link-button{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+            .git-link{
+              box-shadow: 0px 0px 4px 1px rgb(202, 202, 202);
+              padding: 10px;
+              border-radius: 10px;
+              .icon{
+                font-size: 30px;
+              }
+            }
+            .web-link{
+              box-shadow: 0px 0px 4px 1px rgb(202, 202, 202);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              border-radius: 10px;
+              gap: 4px;
+              cursor: pointer;
+              background-color: white;
+              button{
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .project-left {
+        // Styles specific to left-aligned projects go here
+      }
+
+      .project-right {
+        // Styles specific to right-aligned projects go here
+        flex-direction: row-reverse;
+      }
+      @media screen and (max-width:820px) {
+        .project-left,
+        .project-right{
+          display: flex;
+          flex-direction: column;
+          .image{
+            img{
+              width: 100%;
+            }
+          }
+        } 
+      }
+    }
+  }
+}
