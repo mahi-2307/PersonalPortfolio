@@ -29,6 +29,7 @@ const data = [
     gitLink: "https://github.com/mahi-2307/Car-Rental",
     Technology: ["Html", "SCSS", "ReactJS"],
     desc: "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
+    link: "https://car-rental-delta-two.vercel.app/",
   },
   {
     name: "Blog App",
